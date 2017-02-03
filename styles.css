@@ -89,7 +89,7 @@ td.black {
 }
 
 tr:nth-child(even) {
-	background-color: #b0c4de80
+	background-color: rgba(176, 196, 222, 0.5)
 }
 
 tr:nth-child(odd) {
@@ -107,7 +107,7 @@ a {
 }
 
 a.tab {
-    background-color: #b0c4de80;
+    background-color: rgba(176, 196, 222, 0.5);
     color: grey;
     padding: 6px;
     text-align: center;

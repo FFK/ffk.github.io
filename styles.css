@@ -35,21 +35,25 @@ th.single, td.single {
 th.yellow {
 	background-color: yellow;
 	color: black;
+	cursor: pointer;
 }
 
 th.blue {
 	background-color: blue;
 	color: white;
+	cursor: pointer;
 }
 
 th.red {
 	background-color: red;
 	color: white;
+	cursor: pointer;
 }
 
 th.black {
 	background-color: black;
 	color: lightgrey;
+	cursor: pointer;
 }
 
 td {
@@ -57,19 +61,19 @@ td {
 }
 
 td.yellow {
-	background-color: #ff06;
+	background-color: rgba(255, 255, 0, 0.25);
 	color: grey;
 	text-align: center;
 }
 
 td.blue {
-	background-color: #00f6;
+	background-color: rgba(0, 0, 255, 0.25);
 	color: black;
 	text-align: center;
 }
 
 td.red {
-	background-color: #f006;
+	background-color: rgba(255, 0, 0, 0.25);
 	color: black;
 	text-align: center;
 }

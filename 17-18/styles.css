@@ -1,6 +1,6 @@
 th {
 	text-align: left;
-	background-color: lightsteelblue;
+	background-color: burlywood;
 	padding: 5px;
 }
 
@@ -85,11 +85,11 @@ td.black {
 }
 
 .first {
-	background-color: lightsteelblue
+	background-color: burlywood;
 }
 
 tr:nth-child(even) {
-	background-color: rgba(176, 196, 222, 0.5)
+	background-color: beige;
 }
 
 tr:nth-child(odd) {
@@ -107,7 +107,7 @@ a {
 }
 
 a.tab {
-    background-color: rgba(176, 196, 222, 0.5);
+    background-color: beige;
     color: grey;
     padding: 6px;
     text-align: center;
@@ -117,7 +117,7 @@ a.tab {
 }
 
 a.selected {
-	background-color: lightsteelblue;
+	background-color: burlywood;
 	color:black;
 }
 

@@ -1,0 +1,84 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Tahoma, sans-serif;
+}
+
+
+a:link, 
+a:visited {
+  color: darkred;  
+}
+
+a:hover {
+    color: #b90000;
+    border-bottom: 1px solid darkred;
+}
+
+
+a:active {
+    color: darkred; 
+}
+
+.ffk-logo {
+    max-width: 70%;
+    margin: 0 auto;
+    text-align: center;
+    border-bottom: 1px solid #000;
+}
+
+.ffk-logo img {
+    max-width: 25%;
+    padding: 15px 0 5px;
+   
+}
+
+.ranking {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 40%;
+    margin: 0 auto;
+    padding-top: 50px;
+}
+
+
+.ranking1617,
+.ranking1718 {
+    text-align: center;
+}
+
+
+.ranking img {
+    width: 200px;
+    height: auto;
+    display: block;
+}
+
+.text-link {
+    font-size: 20px;
+    letter-spacing: 1px;
+    color: darkred;
+    text-decoration: none;
+    padding-top: 10px;
+    display: block;
+    transition: all 0.2s;
+    border-bottom: 1px solid #FFF;
+}
+
+.footer {
+    background: #DDD;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 10px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    
+}

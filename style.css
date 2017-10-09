@@ -1,69 +1,71 @@
 * {
-    padding: 0;
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
+html,
 body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
     font-family: Tahoma, sans-serif;
 }
 
-
-a:link, 
+a:link,
 a:visited {
-  color: darkred;  
+    color: #8b0000;
 }
-
-a:hover {
-    color: #b90000;
-    border-bottom: 1px solid darkred;
-}
-
 
 a:active {
-    color: darkred; 
+    color: #8b0000;
 }
 
-.ffk-logo {
-    max-width: 70%;
-    margin: 0 auto;
+.main-container {
+    flex: 1 0 auto;
+}
+
+.logo-wrap {
     text-align: center;
+    width: 50%;
+    margin: 0 auto;
     border-bottom: 1px solid #000;
 }
 
-.ffk-logo img {
-    max-width: 25%;
-    padding: 15px 0 5px;
-   
+.logo-wrap img {
+    padding: 20px;
+    max-width: 45%;
+    height: auto;
 }
 
-.ranking {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 40%;
-    margin: 0 auto;
-    padding-top: 50px;
+.ranking-wrap {
+    text-align: center;
 }
 
+.ranking-wrap img {
+    max-width: 230px;
+    border-bottom: 0;
+    box-shadow: 0 0 20px #000;
+}
+
+.ranking-wrap a {
+    display: block;
+}
 
 .ranking1617,
 .ranking1718 {
     text-align: center;
-}
-
-
-.ranking img {
-    width: 200px;
-    height: auto;
-    display: block;
+    display: inline-block;
+    padding: 35px 50px;
 }
 
 .text-link {
     font-size: 20px;
     letter-spacing: 1px;
-    color: darkred;
+    color: #8b0000;
     text-decoration: none;
     padding-top: 10px;
     display: block;
@@ -71,14 +73,38 @@ a:active {
     border-bottom: 1px solid #FFF;
 }
 
-.footer {
-    background: #DDD;
+.text-link:hover {
+    color: #b90000;
+    border-bottom: 1px solid #8b0000;
+}
+
+footer {
     height: 50px;
-    text-align: center;
     line-height: 50px;
-    font-size: 10px;
-    width: 100%;
-    position: absolute;
-    bottom: 0;
+    text-align: center;
+    background: #DDD;
+}
+
+@media screen AND (max-width: 1300px) {
+    .logo-wrap img {
+        max-width: 70%;
+    }
+}
+
+@media screen AND (max-width: 665px) {
+    .logo-wrap {
+        max-width: 100%;
+    }
+    .logo-wrap img {
+        max-width: 100%;
+    }
     
+    .ranking1617,
+    .ranking1718 {
+        padding: 15px;
+    }
+    
+    .ranking-wrap img {
+        max-width: 150px;
+    }
 }

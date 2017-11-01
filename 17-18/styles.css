@@ -32,6 +32,10 @@ th.single, td.single {
 	text-align: center;
 }
 
+span.subtitle {
+	font-size: 8px;
+}
+
 th.yellow {
 	background-color: yellow;
 	color: black;

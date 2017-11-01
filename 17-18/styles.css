@@ -4,6 +4,16 @@ th {
 	padding: 5px;
 }
 
+a.tab:hover,
+th.pointer:hover {
+    background-color: #b26500;
+    color: #000;
+}
+
+th.single:hover {
+    opacity: 0.2;
+}
+
 th.wide, td.wide {
 	width: 140px;
 	max-width: 140px;

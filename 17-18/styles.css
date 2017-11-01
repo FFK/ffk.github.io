@@ -1,13 +1,17 @@
-:root {
-    --animation-time: 0.0s;
-}
-
-
 th {
 	text-align: left;
 	background-color: burlywood;
 	padding: 5px;
-    position: relative;
+}
+
+a.tab:hover,
+th.pointer:hover {
+    background-color: #b26500;
+    color: #000;
+}
+
+th.single:hover {
+    opacity: 0.2;
 }
 
 th.wide, td.wide {
@@ -26,13 +30,12 @@ th.tight, td.tight {
 	width: 40px;
 	max-width: 40px;
 	min-width: 40px;
-    transition: all 0.2s
 }
 
 th.single, td.single {
-    width: 15px;
-    min-width: 15px;
-    max-width: 15px;
+	width: 16px;
+	max-width: 16px;
+	min-width: 16px;
 	font-size: 7;
 	word-break: break-all;
 	padding: 1px;
@@ -135,177 +138,3 @@ a.selected {
 .pointer {
 	cursor: pointer;
 }
-
-.modal {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background: rgba(0,0,0,0.6);
-    color: #FFF;
-}
-
-.frame {
-    box-sizing: border-box;
-    position: relative;
-    top: 26px;
-    left: 400px;
-    width: 650px;
-    height: 50px;
-    border: 2px dashed #FFF;
-    padding: 2px;
-    animation-name: flash;
-    animation-duration: 1s;
-    animation-iteration-count: 5;
-    animation-delay: 1s;
-}
-
-@keyframes flash {
-    0% {border: 2px dashed #FFF;}
-    50% {border: 4px dashed #ff4141;}
-    100% {border: 2px dashed #FFF;}
-}
-
-.frame-desc {
-    position: relative;
-    top: 38px;
-    left: 550px;
-    font-size: 24px;
-    animation-name: pulse;
-    animation-duration: 1s;
-    animation-iteration-count: 1;
-    animation-delay: 1s;
-    display: inline-block;
-}
-
-@keyframes pulse {
-    0% {}
-    50% {transform: scale(1.05)}
-    100% {transform: scale(1.0)}
-}
-
-th.tight.pointer {
-    position: relative;
-}
-th.tight.pointer:hover {
-    background: #c78d41;
-}
-
-th.tight.pointer::before {
-    content: "rozwiń";
-    display: block;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    background: red;
-    min-width: 50px;
-    min-height: 33px;
-    text-align: center;
-    transition: all 0.2s;
-    opacity: 0;
-    z-index: 5;
-}
-
-th.tight.pointer:hover::before {
-    opacity: 1;
-    bottom: -25px;
-}
-
-.hidden {
-    display: none;
-}
- 
-
-
-
-.colorful0.tight.pointer {
-    animation-name: highlight;
-    animation-duration: var(--animation-time);
-    animation-iteration-count: 1;
-    animation-delay: 1s;
-}
-
-.colorful1.tight.pointer {
-    animation-name: highlight;
-    animation-duration: var(--animation-time);
-    animation-iteration-count: 1;
-    animation-delay: 1.2s;
-}
-
-.colorful2.tight.pointer {
-    animation-name: highlight;
-    animation-duration: var(--animation-time);
-    animation-iteration-count: 1;
-    animation-delay: 1.4s;
-}
-
-.colorful3.tight.pointer {
-    animation-name: highlight;
-    animation-duration: var(--animation-time);
-    animation-iteration-count: 1;
-    animation-delay: 1.6s;
-}
-
-.colorful4.tight.pointer {
-    animation-name: highlight;
-    animation-duration: var(--animation-time);
-    animation-iteration-count: 1;
-    animation-delay: 1.8s;
-}
-
-.colorful5.tight.pointer {
-    animation-name: highlight;
-    animation-duration: var(--animation-time);
-    animation-iteration-count: 1;
-    animation-delay: 2.0s;
-}
-
-.colorful6.tight.pointer {
-    animation-name: highlight;
-    animation-duration: var(--animation-time);
-    animation-iteration-count: 1;
-    animation-delay: 2.2s;
-}
-
-.colorful7.tight.pointer {
-    animation-name: highlight;
-    animation-duration: var(--animation-time);
-    animation-iteration-count: 1;
-    animation-delay: 2.4s;
-}
-
-
-.colorful8.tight.pointer {
-    animation-name: highlight;
-    animation-duration: var(--animation-time);
-    animation-iteration-count: 1;
-    animation-delay: 2.6s;
-}
-
-.colorful9.tight.pointer {
-    animation-name: highlight;
-    animation-duration: var(--animation-time);
-    animation-iteration-count: 1;
-    animation-delay: 2.8s;
-}
-
-.colorful10.tight.pointer {
-    animation-name: highlight;
-    animation-duration: var(--animation-time);
-    animation-iteration-count: 1;
-    animation-delay: 3.0s;
-}
-
-.colorful11.tight.pointer {
-    animation-name: highlight;
-    animation-duration: var(--animation-time);
-    animation-iteration-count: 1;
-    animation-delay: 3.2s;
-}
-
-@keyframes highlight {
-    0% {}
-    50% {transform: scale(1.01); background: red;}
-    100% {transform: scale(1.0);}
-}    

@@ -38,7 +38,7 @@ toggle("colorful2");
 hideThree();
 
 setTimeout(function(){
-	if(window.location.search) {}
+	if(window.location.search) {
 		var prefix = window.location.href.substring(0, location.href.lastIndexOf('/'));
 		var sufix = window.location.href.substring(window.location.href.lastIndexOf('/') + 1, window.location.href.lastIndexOf('.'));
 		window.location.href = prefix + '/' + nextPage(sufix) + '.html?go=aye';

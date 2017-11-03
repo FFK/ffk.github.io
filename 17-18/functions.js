@@ -17,6 +17,7 @@ function hideThree() {
 
 function nextPage(page) {
 	switch (page) {
+		case 'Ranking': return 'HARD_MEN';
 		case 'PRO_MEN': return 'HARD_MEN';
 		case 'HARD_MEN': return 'EASY_MEN';
 		case 'EASY_MEN': return 'HARD_WOMEN';

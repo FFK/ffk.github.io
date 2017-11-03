@@ -138,3 +138,9 @@ a.selected {
 .pointer {
 	cursor: pointer;
 }
+
+button.go {
+	float: right;
+	background-color: black;
+	color: beige;
+}

@@ -34,7 +34,6 @@ function go() {
 	window.location.href += '?go=aye';
 }
 
-hideThree();
 
 setTimeout(function(){
 	if(window.location.search) {

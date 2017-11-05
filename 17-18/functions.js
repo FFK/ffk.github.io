@@ -34,8 +34,6 @@ function go() {
 	window.location.href += '?go=aye';
 }
 
-
-toggle("colorful2");
 hideThree();
 
 setTimeout(function(){

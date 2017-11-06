@@ -9,7 +9,7 @@ body {
 	align-items: center;
 	box-sizing: border-box;
 	margin: 0 auto;
-	margin-bottom: 50px;
+	margin-bottom: 20px;
 }
 
 .title-wrapper {
@@ -32,6 +32,7 @@ body {
 	background: black;
 	padding: 25px;
 	flex: 0 0 auto;
+	margin-right: 2px;
 }
 
 .category {
@@ -63,10 +64,11 @@ h1 {
 	justify-content: center;
 	align-items: center;
 	padding: 0 5px;
+	margin-left: 2px;
 }
 
 .category-tabs div {
-	padding: 12px;
+	padding: 10px;
 	flex: 1 1 auto;
 }
 
@@ -102,8 +104,12 @@ th {
 
 tr {
 	padding: 50px;
-	line-height: 35px;
+	line-height: 25px;
 	font-size: 14px;
+}
+
+td.medium {
+	font-weight: bold;
 }
 
 th.single, td.single {
@@ -112,7 +118,7 @@ th.single, td.single {
 }
 
 th.wide, td.wide {
-	width: 240px;
+	width: 320px;
 	padding-left: 10px;
 }
 

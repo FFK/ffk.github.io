@@ -1,0 +1,122 @@
+body {
+	font-family: Verdana, sans-serif;
+	font-size: 10px;
+}
+
+.container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	box-sizing: border-box;
+	margin: 0 auto;
+	margin-bottom: 50px;
+}
+
+.title-wrapper {
+	text-align: center;
+	min-height: 220px;
+	max-height: 220px;
+}
+
+.title {
+	background: #000;
+	color: #FFF;
+	max-height: 120px;
+	min-height: 120px;
+	background: url("img/footer.png") no-repeat center center;
+	background-color: black;
+	background-size: cover;
+}
+
+.logo {
+	background: black;
+	padding: 25px;
+	flex: 0 0 auto;
+}
+
+.category {
+	background: yellow;
+	width: 1200px;
+	min-height: 100px;
+	max-height: 100px;
+	transition: all 0.5s;
+}
+
+span {
+	font-size: 28px;
+}
+
+h1 {
+	font-size: 52px;
+	margin: 0;
+	padding: 15px;
+}
+
+.category-tabs {
+	background: black;
+	height: 220px;
+	color: white;
+	text-align: center;
+	font-weight: bold;
+	display: flex;
+	flex-flow: column;
+	justify-content: center;
+	align-items: center;
+	padding: 0 5px;
+}
+
+.category-tabs div {
+	padding: 12px;
+	flex: 1 1 auto;
+}
+
+.category-tabs div.active {
+	background: yellow;
+	color: black;
+}
+
+.hidden {
+	display: none;
+	visibility: hidden;
+}
+
+.even {
+	background: yellow;
+}
+
+.odd {
+	background: white;
+}
+
+table {
+	margin: 0 auto;
+}
+
+th {
+	text-align: left;
+	background-color: black;
+	padding: 10px;
+	color: white;
+	font-size: 20px;
+}
+
+tr {
+	padding: 50px;
+	line-height: 35px;
+	font-size: 14px;
+}
+
+th.single, td.single {
+	width: 80px;
+	text-align: center;
+}
+
+th.wide, td.wide {
+	width: 240px;
+	padding-left: 10px;
+}
+
+.medium {
+	width: 120px;
+	text-align: center;
+}

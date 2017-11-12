@@ -1,4 +1,10 @@
 var go = true;
+
+function switchEdition(category) {
+	go = false;
+	main.pick(category);
+}
+
 var main = 
 (function() {
 	
@@ -37,9 +43,9 @@ function show(el) {
         
     title.innerHTML = names[counter];
 	catTabs.forEach(function(el) {
-		el.classList = '';
+		el.classList = 'categoryButton';
 	});
-	catTabs[counter].classList = 'active';
+	catTabs[counter].classList = 'active categoryButton';
 	
     elements.forEach(function(item,index) {
         item.classList.value = item.classList[0];
@@ -67,13 +73,19 @@ function diag() {
     }
 }
 
+function pick(category) {
+	counter = category;
+	show(categories[category]);
+}
+
 setInterval(function() {
 	if (go) 
         show(categories[counter]);
 },15000);
 
 return {
-	diag: diag
+	diag: diag,
+	pick: pick
 }
 
 })();

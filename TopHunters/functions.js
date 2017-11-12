@@ -58,9 +58,6 @@ function show(el) {
     });
     
     counter++;
-    if (counter == 6) {
-        counter = 0;
-    }
 }
 
 function diag() {
@@ -78,9 +75,16 @@ function pick(category) {
 	show(categories[category]);
 }
 
+show(categories[0]);
+
 setInterval(function() {
-	if (go) 
-        show(categories[counter]);
+	if (go) {
+		if (counter == 6) {
+			location.reload();
+		} else {			
+			show(categories[counter]);
+		}		
+	}
 },15000);
 
 return {

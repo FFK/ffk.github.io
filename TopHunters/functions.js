@@ -1,10 +1,5 @@
 var go = true;
 
-function switchEdition(category) {
-	go = false;
-	main.pick(category);
-}
-
 var main = 
 (function() {
 	
@@ -70,13 +65,13 @@ function diag() {
     }
 }
 
-function pick(category) {
+function switchEdition(category, run) {
+    go = run == "stop" ? false : true;  
 	counter = category;
 	show(categories[category]);
-}
-
+}    
+    
 show(categories[0]);
-
 setInterval(function() {
 	if (go) {
 		if (counter == 6) {
@@ -89,7 +84,7 @@ setInterval(function() {
 
 return {
 	diag: diag,
-	pick: pick
+	switch: switchEdition
 }
 
 })();

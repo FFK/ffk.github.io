@@ -16,22 +16,22 @@
     </div>
    </div>
    <div class="category-tabs">
-    <div onclick="switchEdition(0);" class="categoryButton">
+    <div onclick="main.switch(0,'stop');" class="categoryButton">
      Chłopcy 9 - 11
     </div>
-    <div onclick="switchEdition(1);" class="categoryButton">
+    <div onclick="main.switch(1,'stop');" class="categoryButton">
      Chłopcy 12 - 13
     </div>
-    <div onclick="switchEdition(2);" class="categoryButton">
+    <div onclick="main.switch(2,'stop');" class="categoryButton">
      Chłopcy 14 - 15
     </div>
-    <div onclick="switchEdition(3);" class="categoryButton">
+    <div onclick="main.switch(3,'stop');" class="categoryButton">
      Dziewczynki 9 - 11
     </div>
-    <div onclick="switchEdition(4);" class="categoryButton">
+    <div onclick="main.switch(4,'stop');" class="categoryButton">
      Dziewczynki 12 - 13
     </div>
-    <div onclick="switchEdition(5);" class="categoryButton">
+    <div onclick="main.switch(5,'stop');" class="categoryButton">
      Dziewczynki 14 - 15
     </div>
    </div>
@@ -39,7 +39,7 @@
   <table>
    <thead>
     <tr>
-     <th class="single button"></th>
+     <th class="single"></th>
      <th class="wide">Zawodnik</th>
      <th class="medium">Suma</th>
      <th class="single cssColor colorful0">1</th>
@@ -57,118 +57,118 @@
      <td class="single"></td>
      <td class="wide">Kozak</td>
      <td class="medium">7t12 8b9</td>
-     <td class="colorful0 single">2t / 1b</td>
-     <td class="colorful0 single">2t / 1b</td>
-     <td class="colorful0 single">-- / 1b</td>
-     <td class="colorful0 single">1t / 1b</td>
-     <td class="colorful0 single">1t / 1b</td>
-     <td class="colorful0 single">4t / 2b</td>
-     <td class="colorful0 single">1t / 1b</td>
-     <td class="colorful0 single">1t / 1b</td>
+     <td class="colorful0 single">t2 / b1</td>
+     <td class="colorful0 single">t2 / b1</td>
+     <td class="colorful0 single">-- / b1</td>
+     <td class="colorful0 single">t1 / b1</td>
+     <td class="colorful0 single">t1 / b1</td>
+     <td class="colorful0 single">t4 / b2</td>
+     <td class="colorful0 single">t1 / b1</td>
+     <td class="colorful0 single">t1 / b1</td>
     </tr> 
     <tr class="b12-13">
      <td class="single"></td>
      <td class="wide">Dzik</td>
      <td class="medium">6t18 7b15</td>
-     <td class="colorful0 single">4t / 1b</td>
-     <td class="colorful0 single">8t / 4b</td>
-     <td class="colorful0 single">-- / 5b</td>
-     <td class="colorful0 single">1t / 1b</td>
-     <td class="colorful0 single">1t / 1b</td>
+     <td class="colorful0 single">t4 / b1</td>
+     <td class="colorful0 single">t8 / b4</td>
+     <td class="colorful0 single">-- / b5</td>
+     <td class="colorful0 single">t1 / b1</td>
+     <td class="colorful0 single">t1 / b1</td>
      <td class="colorful0 single">-- / --</td>
-     <td class="colorful0 single">2t / 2b</td>
-     <td class="colorful0 single">2t / 1b</td>
+     <td class="colorful0 single">t2 / b2</td>
+     <td class="colorful0 single">t2 / b1</td>
     </tr> 
     <tr class="b14-15">
      <td class="single"></td>
      <td class="wide">Wojtas</td>
      <td class="medium">6t14 7b13</td>
-     <td class="colorful0 single">3t / 1b</td>
-     <td class="colorful0 single">-- / 5b</td>
+     <td class="colorful0 single">t3 / b1</td>
+     <td class="colorful0 single">-- / b5</td>
      <td class="colorful0 single">-- / --</td>
-     <td class="colorful0 single">1t / 1b</td>
-     <td class="colorful0 single">1t / 1b</td>
-     <td class="colorful0 single">7t / 3b</td>
-     <td class="colorful0 single">1t / 1b</td>
-     <td class="colorful0 single">1t / 1b</td>
+     <td class="colorful0 single">t1 / b1</td>
+     <td class="colorful0 single">t1 / b1</td>
+     <td class="colorful0 single">t7 / b3</td>
+     <td class="colorful0 single">t1 / b1</td>
+     <td class="colorful0 single">t1 / b1</td>
     </tr> 
     <tr class="b12-13">
      <td class="single"></td>
      <td class="wide">Dawid</td>
      <td class="medium">5t11 7b10</td>
-     <td class="colorful0 single">6t / 1b</td>
+     <td class="colorful0 single">t6 / b1</td>
      <td class="colorful0 single">-- / --</td>
-     <td class="colorful0 single">-- / 3b</td>
-     <td class="colorful0 single">1t / 1b</td>
-     <td class="colorful0 single">1t / 1b</td>
-     <td class="colorful0 single">-- / 2b</td>
-     <td class="colorful0 single">1t / 1b</td>
-     <td class="colorful0 single">2t / 1b</td>
+     <td class="colorful0 single">-- / b3</td>
+     <td class="colorful0 single">t1 / b1</td>
+     <td class="colorful0 single">t1 / b1</td>
+     <td class="colorful0 single">-- / b2</td>
+     <td class="colorful0 single">t1 / b1</td>
+     <td class="colorful0 single">t2 / b1</td>
     </tr> 
     <tr class="g12-13">
      <td class="single"></td>
      <td class="wide">Oliwia</td>
      <td class="medium">5t10 6b9</td>
-     <td class="colorful0 single">1t / 1b</td>
+     <td class="colorful0 single">t1 / b1</td>
      <td class="colorful0 single">-- / --</td>
-     <td class="colorful0 single">-- / 2b</td>
-     <td class="colorful0 single">1t / 1b</td>
-     <td class="colorful0 single">1t / 1b</td>
+     <td class="colorful0 single">-- / b2</td>
+     <td class="colorful0 single">t1 / b1</td>
+     <td class="colorful0 single">t1 / b1</td>
      <td class="colorful0 single">-- / --</td>
-     <td class="colorful0 single">4t / 3b</td>
-     <td class="colorful0 single">3t / 1b</td>
+     <td class="colorful0 single">t4 / b3</td>
+     <td class="colorful0 single">t3 / b1</td>
     </tr> 
     <tr class="b12-13">
      <td class="single"></td>
      <td class="wide">Wilk</td>
      <td class="medium">4t9 6b6</td>
-     <td class="colorful0 single">-- / 1b</td>
-     <td class="colorful0 single">1t / 1b</td>
+     <td class="colorful0 single">-- / b1</td>
+     <td class="colorful0 single">t1 / b1</td>
      <td class="colorful0 single">-- / --</td>
-     <td class="colorful0 single">1t / 1b</td>
-     <td class="colorful0 single">1t / 1b</td>
+     <td class="colorful0 single">t1 / b1</td>
+     <td class="colorful0 single">t1 / b1</td>
      <td class="colorful0 single">-- / --</td>
-     <td class="colorful0 single">6t / 1b</td>
-     <td class="colorful0 single">-- / 1b</td>
+     <td class="colorful0 single">t6 / b1</td>
+     <td class="colorful0 single">-- / b1</td>
     </tr> 
     <tr class="b9-11">
      <td class="single"></td>
      <td class="wide">Paweł</td>
      <td class="medium">3t7 7b11</td>
-     <td class="colorful0 single">-- / 2b</td>
-     <td class="colorful0 single">-- / 2b</td>
+     <td class="colorful0 single">-- / b2</td>
+     <td class="colorful0 single">-- / b2</td>
      <td class="colorful0 single">-- / --</td>
-     <td class="colorful0 single">1t / 1b</td>
-     <td class="colorful0 single">1t / 1b</td>
-     <td class="colorful0 single">-- / 1b</td>
-     <td class="colorful0 single">5t / 2b</td>
-     <td class="colorful0 single">-- / 2b</td>
+     <td class="colorful0 single">t1 / b1</td>
+     <td class="colorful0 single">t1 / b1</td>
+     <td class="colorful0 single">-- / b1</td>
+     <td class="colorful0 single">t5 / b2</td>
+     <td class="colorful0 single">-- / b2</td>
     </tr> 
     <tr class="b14-15">
      <td class="single"></td>
      <td class="wide">Krzysiek</td>
      <td class="medium">3t5 6b8</td>
-     <td class="colorful0 single">-- / 1b</td>
-     <td class="colorful0 single">-- / 3b</td>
+     <td class="colorful0 single">-- / b1</td>
+     <td class="colorful0 single">-- / b3</td>
      <td class="colorful0 single">-- / --</td>
-     <td class="colorful0 single">1t / 1b</td>
-     <td class="colorful0 single">1t / 1b</td>
+     <td class="colorful0 single">t1 / b1</td>
+     <td class="colorful0 single">t1 / b1</td>
      <td class="colorful0 single">-- / --</td>
-     <td class="colorful0 single">3t / 1b</td>
-     <td class="colorful0 single">-- / 1b</td>
+     <td class="colorful0 single">t3 / b1</td>
+     <td class="colorful0 single">-- / b1</td>
     </tr> 
     <tr class="g14-15">
      <td class="single"></td>
      <td class="wide">Daria</td>
      <td class="medium">3t8 5b6</td>
-     <td class="colorful0 single">-- / 2b</td>
+     <td class="colorful0 single">-- / b2</td>
      <td class="colorful0 single">-- / --</td>
      <td class="colorful0 single">-- / --</td>
-     <td class="colorful0 single">3t / 1b</td>
-     <td class="colorful0 single">1t / 1b</td>
+     <td class="colorful0 single">t3 / b1</td>
+     <td class="colorful0 single">t1 / b1</td>
      <td class="colorful0 single">-- / --</td>
-     <td class="colorful0 single">4t / 1b</td>
-     <td class="colorful0 single">-- / 1b</td>
+     <td class="colorful0 single">t4 / b1</td>
+     <td class="colorful0 single">-- / b1</td>
     </tr> 
     <tr class="b14-15">
      <td class="single"></td>
@@ -178,7 +178,20 @@
      <td class="colorful0 single">-- / --</td>
      <td class="colorful0 single">-- / --</td>
      <td class="colorful0 single">-- / --</td>
-     <td class="colorful0 single">-- / 7b</td>
+     <td class="colorful0 single">-- / b7</td>
+     <td class="colorful0 single">-- / --</td>
+     <td class="colorful0 single">-- / --</td>
+     <td class="colorful0 single">-- / --</td>
+    </tr> 
+    <tr class="b12-13">
+     <td class="single"></td>
+     <td class="wide">Zaq</td>
+     <td class="medium">0t0 0b0</td>
+     <td class="colorful0 single">-- / --</td>
+     <td class="colorful0 single">-- / --</td>
+     <td class="colorful0 single">-- / --</td>
+     <td class="colorful0 single">-- / --</td>
+     <td class="colorful0 single">-- / --</td>
      <td class="colorful0 single">-- / --</td>
      <td class="colorful0 single">-- / --</td>
      <td class="colorful0 single">-- / --</td>

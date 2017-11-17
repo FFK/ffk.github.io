@@ -42,9 +42,13 @@ function show(el) {
 	});
 	catTabs[counter].classList = 'active categoryButton';
 	
+	var prevResult = '';
     elements.forEach(function(item,index) {
         item.classList.value = item.classList[0];
-        item.cells[0].innerHTML = index+1;
+        if (prevResult !== item.cells[2].innerHTML) {
+        	item.cells[0].innerHTML = index+1;
+        } 
+        prevResult = item.cells[2].innerHTML;
         if (index % 2 == 0) {
             item.classList.value += ' even';
         } else {
@@ -76,7 +80,7 @@ setInterval(function() {
 	if (go) {
 		if (counter == 6) {
 			location.reload();
-		} else {			
+		} else {
 			show(categories[counter]);
 		}		
 	}

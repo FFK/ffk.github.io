@@ -130,3 +130,17 @@ th.wide, td.wide {
 	width: 120px;
 	text-align: center;
 }
+
+.trim11 th:nth-last-child(1),
+.trim11 th:nth-last-child(2),
+.trim11 th:nth-last-child(3),
+.trim11 th:nth-last-child(4) {
+    display: none;
+}
+
+.trim3 th:nth-child(4),
+.trim3 th:nth-child(5),
+.trim3 th:nth-child(6),
+.trim3 th:nth-child(7) {
+    display: none;
+}

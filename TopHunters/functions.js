@@ -30,10 +30,21 @@ function hideAll () {
 }
 
 function show(el) {
-    let title = document.querySelector('.category h1');
-	let catTabs = document.querySelectorAll('.category-tabs div');
-    let elements = document.querySelectorAll(el);
-   
+    let title = document.querySelector('.category h1'),
+        catTabs = document.querySelectorAll('.category-tabs div'),
+        elements = document.querySelectorAll(el),
+        tHead = document.querySelector('thead'),
+        prevResult = '',
+        where;
+    
+    if (el == '.b9-11' || el == '.b12-13' || el == '.g9-11' || el == '.g12-13') {
+        where = 11;
+        tHead.classList = 'trim' + where;
+    } else if (el == '.b14-15' || el == '.g14-15') {
+        where = 3;
+        tHead.classList = 'trim' + where;
+    }
+       
     hideAll();
         
     title.innerHTML = names[counter];
@@ -42,13 +53,18 @@ function show(el) {
 	});
 	catTabs[counter].classList = 'active categoryButton';
 	
-	var prevResult = '';
     elements.forEach(function(item,index) {
         item.classList.value = item.classList[0];
+        
         if (prevResult !== item.cells[2].innerHTML) {
         	item.cells[0].innerHTML = index+1;
         } 
         prevResult = item.cells[2].innerHTML;
+        
+        for (let i = where; i < where + 4; i++) {
+            item.cells[i].classList = 'hidden';
+        }
+                
         if (index % 2 == 0) {
             item.classList.value += ' even';
         } else {

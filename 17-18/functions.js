@@ -8,10 +8,8 @@ function toggle(className) {
 
 function hideThree() {
     var table = document.getElementsByTagName('table');
-    if (table[0].rows[1].cells.length < 69) {
-        for (var i = 0; i < table[0].rows.length; i++) {
-            table[0].rows[i].cells[3].style.display = 'none';
-        }
+    for (var i = 0; i < table[0].rows.length; i++) {
+        table[0].rows[i].cells[3].style.display = 'none';
     }
 }
 
@@ -42,3 +40,5 @@ setTimeout(function(){
 		window.location.replace(prefix + '/' + nextPage(sufix) + '.html?go=aye');
 	}
 },10000);
+
+hideThree();

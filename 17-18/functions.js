@@ -41,4 +41,4 @@ setTimeout(function(){
 	}
 },10000);
 
-hideThree();
+//hideThree();
